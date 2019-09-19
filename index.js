@@ -14,11 +14,5 @@ class Neighborhood {
 
 
 class Meal {
-  constructor(text,numbr){
-    this.text = text
-    this.numbr = numbr
-    this.id = ++mealId
 
-    store.meals.push(this)
-  }
 }
