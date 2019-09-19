@@ -65,7 +65,7 @@ class Meal {
         }.bind(this)
     );
   }
-  
+
 }
 
 
