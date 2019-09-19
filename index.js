@@ -59,7 +59,7 @@ class Meal {
     );
   }
   customers() {
-    return 
+    return
   }
 // customer doesnt have a mealId
 }
