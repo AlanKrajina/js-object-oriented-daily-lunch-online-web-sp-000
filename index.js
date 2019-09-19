@@ -16,6 +16,17 @@ class Neighborhood {
 
     store.neighborhoods.push(this)
   }
+
+  deliveries() {
+    return store.deliveries.filter(
+        function(deliverie) {
+            return deliverie.neighborhoodId === this.id;
+        }.bind(this)
+    );
+  }
+
+
+
 }
 
 
