@@ -97,7 +97,16 @@ class Customer {
     });
   }
 
+
+
   totalSpent(){
+
+    const reduceProductPrices = function (agg, el, i, arr) {
+      return agg + el.price;     // zbroji sve el.price (loop)
+};
+
+    store.meals.reduce(reduceProductPrices, 0);
+
 
   }
 }
