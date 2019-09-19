@@ -97,23 +97,23 @@ class Delivery {
   meal() {
     return store.meals.find(
         function(meal) {
-            return meal.id === this.driverId;
+            return meal.id === this.mealId;
         }.bind(this)
     );
   }
 
-  driver() {
-    return store.drivers.find(
-        function(driver) {
-            return driver.id === this.driverId;
+  neighborhood() {
+    return store.neighborhoods.find(
+        function(neighborhood) {
+            return neighborhood.id === this.neighborhoodId;
         }.bind(this)
     );
   }
 
-  driver() {
-    return store.drivers.find(
-        function(driver) {
-            return driver.id === this.driverId;
+  customer() {
+    return store.customers.find(
+        function(customer) {
+            return customer.id === this.customerId;
         }.bind(this)
     );
   }
