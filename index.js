@@ -105,7 +105,7 @@ class Customer {
       return agg + el.price;     // zbroji sve el.price (loop)
     };
 
-    return store.meals.reduce(reduceProductPrices, 0);
+    return meals().reduce(reduceProductPrices, 0);
     }
 }
 
