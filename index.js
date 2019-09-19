@@ -72,6 +72,23 @@ class Customer {
 
     store.customers.push(this)
   }
+
+  deliveries() {
+    return store.deliveries.filter(
+        function(deliverie) {
+            return deliverie.customerId === this.id;
+        }.bind(this)
+    );
+  }
+
+  meals() {
+    return store.meals.filter(
+        function(meal) {
+            return meal.customerId === this.id;
+        }.bind(this)
+    );
+  }
+
 }
 
 
@@ -117,6 +134,4 @@ class Delivery {
         }.bind(this)
     );
   }
-
-
 }
