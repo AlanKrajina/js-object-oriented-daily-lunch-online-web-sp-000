@@ -50,6 +50,8 @@ class Meal {
 
     store.meals.push(this)
   }
+
+
 }
 
 
@@ -91,4 +93,7 @@ class Delivery {
 
     store.deliveries.push(this)
   }
+
+
+  
 }
