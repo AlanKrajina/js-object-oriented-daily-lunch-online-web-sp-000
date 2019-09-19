@@ -31,8 +31,6 @@ class Neighborhood {
         }.bind(this)
     );
   }
-
-
 }
 
 
