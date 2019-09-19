@@ -59,7 +59,7 @@ class Meal {
 class Customer {
   constructor(name,neighborhood){
     this.name = name
-    this.neighborhoodId = neighborhood.id;
+    this.neighborhoodId = neighborhood.id
     this.id = ++customerId
 
     store.customers.push(this)
