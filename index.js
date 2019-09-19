@@ -81,12 +81,13 @@ class Customer {
     );
   }
 
+
+
   meals() {
-    return store.meals.filter(
-        function(meal) {
-            return meal.customerId === this.id;
-        }.bind(this)
-    );
+    return this.deliveries().map(trip => {
+      return deliverie.customer(); //trip belong to a passenger  ---> CALLING trip FUNCTION()
+                                                             // passenger.id === trip.passengerId;
+    });
   }
 
 }
