@@ -64,17 +64,12 @@ class Meal {
   //Has many customers through delivery. A meal has many customers. /returns all the customers who have had the meal delivered. Be careful not to return the same customer twice if they have ordered this meal multiple times.
 // returns this meals deliveries customers
 
-
   static byPrice() {
-
     const numberSorter = function (num1, num2) {
       return num2.price - num1.price;
     };
-
     return store.meals.sort(numberSorter)
   }
-
-
 }
 
 
