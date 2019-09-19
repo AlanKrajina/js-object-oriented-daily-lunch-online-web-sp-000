@@ -59,7 +59,7 @@ class Meal {
     );
   }
   customers() {
-    return
+    return this.deliveries().map(delivery => delivery.customer());
   }
 // customer doesnt have a mealId
 }
