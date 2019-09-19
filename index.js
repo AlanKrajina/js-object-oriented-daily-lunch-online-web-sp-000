@@ -62,7 +62,7 @@ class Meal {
     return this.deliveries().map(delivery => delivery.customer());
   }
   //Has many customers through delivery. A meal has many customers. /returns all the customers who have had the meal delivered. Be careful not to return the same customer twice if they have ordered this meal multiple times.
-
+// returns this meals deliveries customers
   byPrice(){
 
   }
