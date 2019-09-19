@@ -32,16 +32,12 @@ class Neighborhood {
   }
 
   meals() {
-    return store.meals.filter(
-        function(meal) {
-            return meal.neighborhoodId === this.id;
-        }.bind(this)
-    );
+    return this.deliveries().map(delivery => delivery.meal());
   }
 }
 
 //customers() {
-//  return this.deliveries().map(delivery => delivery.customer());
+//  return this.deliveries().map(delivery => delivery.meal());
 //}
 
 
