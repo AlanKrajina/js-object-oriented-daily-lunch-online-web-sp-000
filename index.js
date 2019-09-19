@@ -85,8 +85,7 @@ class Customer {
 
   meals() {
     return this.deliveries().map(deliverie => {
-      return deliverie.customer(); //trip belong to a passenger  ---> CALLING trip FUNCTION()
-                                                             // passenger.id === trip.passengerId;
+      return deliverie.customer();
     });
   }
 
