@@ -103,12 +103,10 @@ class Customer {
 
     const reduceProductPrices = function (agg, el, i, arr) {
       return agg + el.price;     // zbroji sve el.price (loop)
-};
+    };
 
     return store.meals.reduce(reduceProductPrices, 0);
-
-
-  }
+    }
 }
 
 
