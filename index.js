@@ -94,6 +94,29 @@ class Delivery {
     store.deliveries.push(this)
   }
 
+  meal() {
+    return store.meals.find(
+        function(meal) {
+            return meal.id === this.driverId;
+        }.bind(this)
+    );
+  }
+
+  driver() {
+    return store.drivers.find(
+        function(driver) {
+            return driver.id === this.driverId;
+        }.bind(this)
+    );
+  }
+
+  driver() {
+    return store.drivers.find(
+        function(driver) {
+            return driver.id === this.driverId;
+        }.bind(this)
+    );
+  }
 
 
 }
