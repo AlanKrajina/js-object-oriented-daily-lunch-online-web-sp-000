@@ -59,11 +59,7 @@ class Meal {
     );
   }
   customers() {
-    return store.customers.filter(
-        function(customer) {
-            return customer.mealId === this.id;
-        }.bind(this)
-    );
+    return 
   }
 // customer doesnt have a mealId
 }
