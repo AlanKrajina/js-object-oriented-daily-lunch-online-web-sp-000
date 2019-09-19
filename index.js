@@ -97,6 +97,9 @@ class Customer {
     });
   }
 
+  totalSpent(){
+    
+  }
 }
 
 
