@@ -19,8 +19,8 @@ class Neighborhood {
 
   deliveries() {
     return store.deliveries.filter(
-        function(deliverie) {
-            return deliverie.neighborhoodId === this.id;
+        function(delivery) {
+            return delivery.neighborhoodId === this.id;
         }.bind(this)
     );
   }
@@ -75,8 +75,8 @@ class Customer {
 
   deliveries() {
     return store.deliveries.filter(
-        function(deliverie) {
-            return deliverie.customerId === this.id;
+        function(delivery) {
+            return delivery.customerId === this.id;
         }.bind(this)
     );
   }
@@ -84,8 +84,8 @@ class Customer {
 
 
   meals() {
-    return this.deliveries().map(deliverie => {
-      return deliverie.customer();
+    return this.deliveries().map(delivery => {
+      return delivery.customer();
     });
   }
 
