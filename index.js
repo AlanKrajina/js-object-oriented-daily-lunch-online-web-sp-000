@@ -19,6 +19,6 @@ class Meal {
     this.numb = numb
     this.id = ++mealId
 
-    store.neighborhoods.push(this)
+    store.meals.push(this)
   }
 }
