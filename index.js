@@ -65,12 +65,8 @@ class Meal {
         }.bind(this)
     );
   }
-
+// customer doesnt have a mealId
 }
-
-
-
-
 
 
 
