@@ -8,7 +8,6 @@ let deliveryId = 0;
 
 
 
-
 class Neighborhood {
   constructor(name){
     this.name = name
@@ -32,10 +31,6 @@ class Neighborhood {
     );
   }
 }
-
-
-
-
 
 
 
@@ -73,7 +68,6 @@ class Meal {
 
 
 
-
 class Customer {
   constructor(name,neighborhoodId){
     this.name = name
@@ -104,13 +98,6 @@ class Customer {
     return this.meals().reduce(reduceProductPrices, 0);
     }
 }
-
-
-
-
-
-
-
 
 
 
