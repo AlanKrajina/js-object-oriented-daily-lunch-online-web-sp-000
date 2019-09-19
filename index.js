@@ -51,7 +51,21 @@ class Meal {
     store.meals.push(this)
   }
 
-
+  deliveries() {
+    return store.deliveries.filter(
+        function(delivery) {
+            return delivery.mealId === this.id;
+        }.bind(this)
+    );
+  }
+  customers() {
+    return store.customers.filter(
+        function(customer) {
+            return customer.mealId === this.id;
+        }.bind(this)
+    );
+  }
+  
 }
 
 
@@ -80,8 +94,6 @@ class Customer {
         }.bind(this)
     );
   }
-
-
 
   meals() {
     return this.deliveries().map(delivery => {
